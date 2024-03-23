@@ -32,6 +32,8 @@ Greetings from Germany to all Capitalists around the World! What a nice Life we 
 Credits to Mooreiche: https://github.com/Mooreiche/AIBackup
 And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 
+# Installation: drag "AIBackup2" to your server resources folder and add to your server.cfg "start AIBackup2" 
+# REQUIRES [NATIVEUI FOR LUA](https://github.com/FrazzIe/NativeUILua)
 
 # **[PATROL UNIT PREVIEW by dvipeer](https://www.youtube.com/watch?v=gXKo5G4lU_4)**
 # **[AIR UNIT PREVIEW by dvipeer](https://www.youtube.com/watch?v=PcPQ2wpQlq0)**
@@ -39,7 +41,7 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 # **[DOWNLOAD HERE](https://github.com/blackfirefly000/AIBackup2/releases)**
 
 
-# Installation: drag "AIBackup2" to your server resources folder and add to your server.cfg "start AIBackup2" 
+
 
 > # To open the menu: "+" in your NUMPAD (This keybind is changeable in the keybinds setting of your game)
 > **[You are only able to call ONE unit and one type of unit, you can't call more than 1 patrol or 1 air unit, etc]**
