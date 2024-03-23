@@ -1,66 +1,93 @@
 ```
-******************************************
-*                                        *
-*   AIBACKUP REMASTERED by MajorFivePD   *
-*                                        *
-******************************************
+blackfirefly00
+Copyright C 2024
+Used with permission
+
+Modified from the Remaster by MajorFivePD (dsvipeer)
+Copyright C 2023
+
+Modified from the original by FiveM Scripts (Mooreiche)
+Copyright C 2018
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+at your option any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+CREDITS:
+(IceHax) - for publishing an incomplete amublance script on cfx.re which gave me the idea and basic structure to create this script
+Mooreiche - Me/Original Uploader
+Mobius1 - huge thanks for fixing bugs and saving me alot of headache!
+MajorFivePD (dsvipeer) - All bugs were fixed + added new backup
+blackfirefly000 - Menu, SWAT, Motor Unit, weapons, Individual depts, config, and more
+
+Greetings from Germany to all Capitalists around the World! What a nice Life we all have! REMEMBER TO FIGHT AGAINST COMMUNISM! -Mooreiche
 ```
-Credits to him: [Mooreiche](https://github.com/Mooreiche/AIBackup) 
-(**His code did not received any update since 3 years ago, so I thought that maybe someone needs this resource but with the fixes and new possibilities.**)
+Credits to Mooreiche: https://github.com/Mooreiche/AIBackup
+And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 
 
-# **[PATROL UNIT PREVIEW](https://www.youtube.com/watch?v=gXKo5G4lU_4)**
-# **[AIR UNIT (NEW) - PREVIEW](https://www.youtube.com/watch?v=PcPQ2wpQlq0)**
+# **[PATROL UNIT PREVIEW by dvipeer](https://www.youtube.com/watch?v=gXKo5G4lU_4)**
+# **[AIR UNIT PREVIEW by dvipeer](https://www.youtube.com/watch?v=PcPQ2wpQlq0)**
 
-# **[DOWNLOAD HERE](https://github.com/dsvipeer/AIBackupRemaster/releases/tag/fivem)**
+# **[DOWNLOAD HERE](https://github.com/blackfirefly000/AIBackup2/releases)**
 
 
-# Installation: drag "AIBackupRemaster" to your server resources folder and add to your server.cfg "ensure AIBackupRemaster" 
-**[Do not rename the folder and copy the exactly name into the server.cfg]**
+# Installation: drag "AIBackup2" to your server resources folder and add to your server.cfg "start AIBackup2" 
 
-> # To call Patrol Unit Backup: /aib or "+" in your NUMPAD 
-> # To cancel both backups press "-" in your NUMPAD 
-> # To call Air Unit: /aib2 
-> **[You are only able to call one of them, if you called air unit, you can't call patrol, and vice-versa]**
-> **[You are only able to call ONE unit, you can't call more than 1 patrol or 1 air unit]**
-> **[Only able to call Air Unit via chat command]**
+> # To open the menu: "+" in your NUMPAD (This keybind is changeable in the keybinds setting of your game)
+> **[You are only able to call ONE unit and one type of unit, you can't call more than 1 patrol or 1 air unit, etc]**
 > **[Controller Support in this resource disabled to avoid issues while using controller]**
 
-# CHANGES | BUG FIXES | NEW FUNCTION:
+# CHANGES | BUG FIXES | NEW FEATURES | PLANNED FEATURES:
 
-*  **KNOWN BUGS FIXED:**
+*  **CHANGES:**
+     * **When you leave your vehicle or call backup on foot, backup units will drive to you and get out leave their vehicle** 
+      
+*  **NEW FEATURES:**
 
-      * **Fixed Relationship issue where nearby random npcs starts following you endless after you call or end the backup.**
+     * **ADDED MENU -> SEE ABOVE**
+     
+     * **ADDED CONFIG -> SEE BELOW**
+ 
+     * **ADDED MULTIPLE DEPARTMENT SUPPORT -> LSPD, LSSD, BCSO, SAHP, FIB**
+     
+     * **ADDED NEW BACKUP -> SWAT**
+       **SWAT will follow like regular patrol units but use rifles and armored vehicles**
+     
+     * **ADDED NEW BACKUP -> Motorcycle Unit**
+     **Motor Unit will follow like regular patrol units but use motorcycles**
 
-     *  **Fixed Relationship issue where the backup cop would try to enter your vehicle constantly, following you forever and never going away when they were cancelled.**
-
-   *  **Added new function so when you cancel the backup, the cop will get in their vehicle and drive away in the traffic.**
-
-   * **Changed the backup so instead of going to your coords, the cop will follow you with lights/sirens on in a safe distance allowing pursuits to take place, and he will only leave the vehicle if you or him is being threatened/shot by enemies.**
-
-
-* **ADDED NEW BACKUP -> AIR UNIT (POLMAV)**
-    
-   **Air Unit will follow you realistically at safe height (always will overcome and pilot safe to follow professionally) and it's able to pilot between skyscrapers/tall buildings and will use spotlight at night being fully immersive**
+*  **PLANNED  FEATURES:**
+   * **Fix backup not leaving their vehicle when you exit yours while they are too close**
+   * **Add 4 SWAT team members to the SWAT backup**
+   * **Backup enters their vehicle and follows you if you re-enter yours**
+   * **Boat Unit** 
+  
 
 # CONFIGURATION:
-   * **In the "variables" and "AddEventHandler" section, you can ONLY change these values:**
+   **Notes: READ ME PLEASE. No support will be given for issues discussed here. Please use your brain!**
+   
+1. All config options support multiple values unless otherwise marked.
 
+2. MAKE SURE the commas in your arrays are set up correctly. Usually, if you try to start the resource with a malformed config, the console will display an error that explains this, but if it's not working, check this first
 
-```
--- variables --
-police        = GetHashKey('police3') -- You can add any vehicle here, replace or addon.
-policeman     = GetHashKey("s_m_y_cop_01") -- You can add any ped here.
+3. All arrays MUST be enclosed by { }. Generally, all values are in arrays, see #1.
 
-            local mode = -1  -- 0 for ahead, -1 = behind , 1 = left, 2 = right, 3 = back left, 4 = back right  
-            local speed = 50.0 -- Modify the backup maximum speed when following you.
-            local minDistance = 4.0 -- Default safe distance set by me, you can change it here.
-            local p7 = 0 -- Do not touch here
-            local noRoadsDistance = 0.0 -- Do not touch here
+4. Extras and liveries are currently shared by all vehicles of their type and department. (All LSPD Patrol is the same as all LSPD Patrol but is not the same as LSPD SWAT or LSSD Patrol, etc) I may fix this, may not, idk.
 
-```
+5. The livery index number is related to the number at the end of the sign texture in the vehicle ytd. The livery index starts at 0. Example: car_sign_1 is a livery for "car" with an index of 0
 
+6. Greetings from Germany to all Capitalists around the World! What a nice Life we all have! REMEMBER TO FIGHT AGAINST COMMUNISM! -Mooreiche
 
-Credits: https://github.com/Mooreiche/AIBackup
-  My Github: https://github.com/dsvipeer
-  My Profile: https://forum.cfx.re/u/MajorFivePD/summary
+7. Support can be found at https://discord.gg/YNJxjDMQdF
+
+ **My Github: https://github.com/blackfirefly000**
+ **My Profile: https://forum.cfx.re/u/blackfirefly000/summary**
+ 
