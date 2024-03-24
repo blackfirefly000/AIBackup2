@@ -37,7 +37,7 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 # INSTALLATION | REQUIREMENTS | PREVIEWS | DOWNLOAD | HOW TO USE:
 
 * **INSTALLATION:**
-    * Drag "AIBackup2" to your server resources folder
+    * Drag "AIBackup2" folder into your server resources folder
     * Add "start AIBackup2" to your server.cfg
 
 * **REQUIREMENTS:**
