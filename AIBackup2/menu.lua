@@ -299,30 +299,6 @@ function AirItem(menu)
     menuPool:MouseEdgeEnabled(false)
     menuPool:ControlDisablingEnabled(false)
 end
-function InVehicleItem(menu)
-    local inVehicle = UIMenuItem.New("~y~Enter Vehicle", "Request Backup Follow in Vehicle")
-    menu:AddItem(inVehicle)
-    menu.OnItemSelect = function(sender, item, index)
-        if item == inVehicle then
-            local player = PlayerPedId()
-            if player~=nil and active then
-                EnterVehicle()
-            end
-        end
-    end
-end
-function OnFootItem(menu)
-    local onFoot = UIMenuItem.New("~y~Leave Vehicle", "Request Backup Follow on Foot")
-    menu:AddItem(onFoot)
-    menu.OnItemSelect = function(sender, item, index)
-        if item == onFoot then
-            local player = PlayerPedId()
-            if player~=nil and active then
-                LeaveVehicle()
-            end
-        end
-    end
-end
 function Code4Item(menu)
     local codeFour = UIMenuItem.New("~r~Code 4", "Dismiss Backup")
     menu:AddItem(codeFour)
@@ -337,8 +313,6 @@ PatrolItem(backupMenu)
 MotorItem(backupMenu)
 SwatItem(backupMenu)
 AirItem(backupMenu)
-InVehicleItem(backupMenu)
-OnFootItem(backupMenu)
 Code4Item(backupMenu)
 menuPool:RefreshIndex()
 
