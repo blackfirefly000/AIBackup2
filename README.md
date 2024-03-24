@@ -1,9 +1,13 @@
 ```
-By blackfirefly000 (2024)
+By blackfirefly000
+Copyright C 2024
+Used with permission
 
-Modified from the Remaster by MajorFivePD (dsvipeer) (2023)
+Modified from the Remaster by MajorFivePD (dsvipeer)
+Copyright C 2023
 
-Modified from the original by FiveM Scripts (Mooreiche) (2018)
+Modified from the original by FiveM Scripts (Mooreiche)
+Copyright C 2018
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
