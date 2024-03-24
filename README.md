@@ -77,6 +77,7 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
          * Motor Unit will follow like regular patrol units but use motorcycles
 
 *  **PLANNED  FEATURES:**
+   * ESX and QBcore versions
    * Fix backup not leaving their vehicle when you exit yours while they are too close
    * Add 4 SWAT team members to the SWAT backup
    * Backup enters their vehicle and follows you if you re-enter yours
