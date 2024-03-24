@@ -25,7 +25,7 @@ CREDITS:
 Mooreiche - Me/Original Uploader
 Mobius1 - huge thanks for fixing bugs and saving me alot of headache!
 MajorFivePD (dsvipeer) - All bugs were fixed + added new backup
-blackfirefly000 - Menu, SWAT, Motor Unit, weapons, Individual depts, config, and more
+blackfirefly000 - Menu, SWAT, Motor Unit, weapons, individual depts, config, and more
 
 Greetings from Germany to all Capitalists around the World! What a nice Life we all have! REMEMBER TO FIGHT AGAINST COMMUNISM! -Mooreiche
 ```
