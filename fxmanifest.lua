@@ -29,7 +29,8 @@ author 'blackfirefly000, MajorFivePD (dsvipeer), Mooreiche, Mobius1'
 
 --Requires NativeUI, found here: https://github.com/FrazzIe/NativeUILua 
 dependencies {
-  'NativeUI'
+  'NativeUI',
+  '/gameBuild:3095'    
 }
 
 
