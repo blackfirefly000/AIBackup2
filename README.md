@@ -32,45 +32,54 @@ Greetings from Germany to all Capitalists around the World! What a nice Life we 
 Credits to Mooreiche: https://github.com/Mooreiche/AIBackup
 And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 
-# Installation: drag "AIBackup2" to your server resources folder and add to your server.cfg "start AIBackup2" 
-# REQUIRES [NATIVEUI FOR LUA](https://github.com/FrazzIe/NativeUILua)
+# INSTALLATION | REQUIREMENTS | PREVIEWS | DOWNLOAD | HOW TO USE:
 
-# **[PATROL UNIT PREVIEW by dvipeer](https://www.youtube.com/watch?v=gXKo5G4lU_4)**
-# **[AIR UNIT PREVIEW by dvipeer](https://www.youtube.com/watch?v=PcPQ2wpQlq0)**
+* **INSTALLATION:**
+    * Drag "AIBackup2" to your server resources folder
+    * Add "start AIBackup2" to your server.cfg
 
-# **[DOWNLOAD HERE](https://github.com/blackfirefly000/AIBackup2/releases)**
+* **REQUIREMENTS:**
+    * [NATIVEUI FOR LUA](https://github.com/FrazzIe/NativeUILua)
+    * GAME BUILD 3095 (mp2023_02) **IF USING DEFAULT CONFIG**
 
+* **PREVIEWS:** 
+    * **[PATROL UNIT PREVIEW by dvipeer](https://www.youtube.com/watch?v=gXKo5G4lU_4)**
+    * **[AIR UNIT PREVIEW by dvipeer](https://www.youtube.com/watch?v=PcPQ2wpQlq0)**
 
+* **DOWNLOAD:**
+    * **[DOWNLOAD HERE](https://github.com/blackfirefly000/AIBackup2/releases)**
 
-
-> # To open the menu: "+" in your NUMPAD (This keybind is changeable in the keybinds setting of your game)
-> **[You are only able to call ONE unit and one type of unit, you can't call more than 1 patrol or 1 air unit, etc]**
-> **[Controller Support in this resource disabled to avoid issues while using controller]**
+* **HOW TO USE:**
+    * To open the menu: "+" in your NUMPAD 
+        * This keybind is changeable in the keybinds setting of your game
+        * You are only able to call ONE unit and one type of unit, you can't call more than 1 patrol or 1 air unit, etc]
+        * Controller Support in this resource disabled to avoid issues while using controller
 
 # CHANGES | BUG FIXES | NEW FEATURES | PLANNED FEATURES:
 
 *  **CHANGES:**
-     * **When you leave your vehicle or call backup on foot, backup units will drive to you and get out leave their vehicle** 
+     * When you leave your vehicle or call backup on foot, backup units will drive to you and get out leave their vehicle
       
 *  **NEW FEATURES:**
 
-     * **ADDED MENU -> SEE ABOVE**
+     * ADDED MENU -> SEE ABOVE
      
-     * **ADDED CONFIG -> SEE BELOW**
+     * ADDED CONFIG -> SEE BELOW
  
-     * **ADDED MULTIPLE DEPARTMENT SUPPORT -> LSPD, LSSD, BCSO, SAHP, FIB**
+     * ADDED MULTIPLE DEPARTMENT SUPPORT -> LSPD, LSSD, BCSO, SAHP, FIB
      
-     * **ADDED NEW BACKUP -> SWAT**
-       **SWAT will follow like regular patrol units but use rifles and armored vehicles**
+     * ADDED NEW BACKUP -> SWAT
+         * SWAT will follow like regular patrol units but use rifles and armored vehicles
      
-     * **ADDED NEW BACKUP -> Motorcycle Unit**
-     **Motor Unit will follow like regular patrol units but use motorcycles**
+     * ADDED NEW BACKUP -> Motorcycle Unit
+         * Motor Unit will follow like regular patrol units but use motorcycles
 
 *  **PLANNED  FEATURES:**
-   * **Fix backup not leaving their vehicle when you exit yours while they are too close**
-   * **Add 4 SWAT team members to the SWAT backup**
-   * **Backup enters their vehicle and follows you if you re-enter yours**
-   * **Boat Unit** 
+   * Fix backup not leaving their vehicle when you exit yours while they are too close
+   * Add 4 SWAT team members to the SWAT backup
+   * Backup enters their vehicle and follows you if you re-enter yours
+   * Boat Unit
+   * Version checker
   
 
 # CONFIGURATION:
