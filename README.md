@@ -32,6 +32,8 @@ Greetings from Germany to all Capitalists around the World! What a nice Life we 
 Credits to Mooreiche: https://github.com/Mooreiche/AIBackup
 And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 
+**Contact [blackfirefly000](https://github.com/blackfirefly000) on [Discord](https://discord.gg/YNJxjDMQdF) or the [FiveM Forums](https://forum.cfx.re/u/blackfirefly000/summary) for suggestions, comments, and other concerns. Support is mainly provided on discord. If you would like to assist in the project, message me on Discord or through the FiveM forums.**
+
 # INSTALLATION | REQUIREMENTS | PREVIEWS | DOWNLOAD | HOW TO USE:
 
 * **INSTALLATION:**
