@@ -28,12 +28,11 @@ description 'AI Law Enforcement Backup + Menu'
 author 'blackfirefly000, MajorFivePD (dsvipeer), Mooreiche, Mobius1'
 version '1.0.0'
 
---Requires NativeUI, found here: https://github.com/FrazzIe/NativeUILua 
-dependencies {
-  'NativeUI',
-  '/gameBuild:3095'    
-}
 
+dependencies {
+  'NativeUI', --Requires NativeUI, found here: https://github.com/FrazzIe/NativeUILua 
+  '/gameBuild:3095'   --This can be removed if you want to use an older game build and are not using the default config  
+}
 
 fx_version 'cerulean'
 game {'gta5'}
