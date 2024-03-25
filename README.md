@@ -26,13 +26,11 @@ Mooreiche - Me/Original Uploader
 Mobius1 - huge thanks for fixing bugs and saving me alot of headache!
 MajorFivePD (dsvipeer) - All bugs were fixed + added new backup
 blackfirefly000 - Menu, SWAT, Motor Unit, weapons, individual depts, config, and more
-
-Greetings from Germany to all Capitalists around the World! What a nice Life we all have! REMEMBER TO FIGHT AGAINST COMMUNISM! -Mooreiche
 ```
 Credits to Mooreiche: https://github.com/Mooreiche/AIBackup
 And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 
-**Contact [blackfirefly000](https://github.com/blackfirefly000) on [Discord](https://discord.gg/YNJxjDMQdF) or the [FiveM Forums](https://forum.cfx.re/u/blackfirefly000/summary) for suggestions, comments, and other concerns. Support is mainly provided on discord. If you would like to assist in the project, message me on Discord or through the FiveM forums.**
+**Contact [blackfirefly000](https://github.com/blackfirefly000) on [Discord](https://discord.gg/YNJxjDMQdF) or the [FiveM Forums](https://forum.cfx.re/u/blackfirefly000/summary) for suggestions, comments, support, and other concerns. Support is mainly provided on discord. If you would like to assist in the project, message me on Discord or through the FiveM forums.**
 
 # INSTALLATION | REQUIREMENTS | PREVIEWS | DOWNLOAD | HOW TO USE:
 
@@ -98,9 +96,6 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 
 5. The livery index number is related to the number at the end of the sign texture in the vehicle ytd. The livery index starts at 0. Example: car_sign_1 is a livery for "car" with an index of 0
 
-6. Greetings from Germany to all Capitalists around the World! What a nice Life we all have! REMEMBER TO FIGHT AGAINST COMMUNISM! -Mooreiche
-
-7. Support can be found at https://discord.gg/YNJxjDMQdF
 
  **My Github: https://github.com/blackfirefly000**
  **My Profile: https://forum.cfx.re/u/blackfirefly000/summary**
