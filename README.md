@@ -58,14 +58,12 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 # CHANGES | BUG FIXES | NEW FEATURES | PLANNED FEATURES:
 
 *  **CHANGES:**
-     * When you leave your vehicle or call backup on foot, backup units will drive to you and get out leave their vehicle
+     * When you leave your vehicle or call backup on foot, backup units will drive to you and leave their vehicle
       
 *  **NEW FEATURES:**
 
      * ADDED MENU -> SEE ABOVE
      
-     * ADDED CONFIG -> SEE BELOW
- 
      * ADDED MULTIPLE DEPARTMENT SUPPORT -> LSPD, LSSD, BCSO, SAHP, FIB
      
      * ADDED NEW BACKUP -> SWAT
@@ -73,6 +71,14 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
      
      * ADDED NEW BACKUP -> Motorcycle Unit
          * Motor Unit will follow like regular patrol units but use motorcycles
+  
+    * ADDED CONFIG -> SEE BELOW
+         * Vehicle livery support
+         * Vehicle extras support
+         * Different weapons for SWAT and normal patrol
+         * Weapon component support
+         * Multiple vehicles per department
+         * And much more!
 
 *  **PLANNED  FEATURES:**
    * ESX and QBcore versions
