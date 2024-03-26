@@ -26,6 +26,10 @@ Mooreiche - Me/Original Uploader
 Mobius1 - huge thanks for fixing bugs and saving me alot of headache!
 MajorFivePD (dsvipeer) - All bugs were fixed + added new backup
 blackfirefly000 - Menu, SWAT, Motor Unit, weapons, individual depts, config, and more
+
+From Moorieche: “Like the Scripts/Mods i publish for other Games you can edit, reupload, fix, delete, sniff, smoke or what ever you want with this script. Just do not delete anyone out of the credits and add your name to it!”
+
+From MajorFivePD: “I’ve seen your work and I’m glad you took your time to rewrite! I’m honored to have my AIBackup work in it, great release!”
 ```
 Credits to Mooreiche: https://github.com/Mooreiche/AIBackup
 And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
