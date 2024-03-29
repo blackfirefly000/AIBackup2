@@ -37,7 +37,7 @@ DO NOT DELETE ANYONE OUT OF THE CREDITS JUST ADD YOUR NAME TO IT!!!			DO NOT DEL
 
 companyName     = "Dispatch" -- DO NOT TOUCH
 companyIcon     = "CHAR_CALL911" -- DO NOT TOUCH
-drivingStyle    = 537658174 -- https://www.vespura.com/fivem/drivingstyle/
+drivingStyle    = 546046783 -- https://www.vespura.com/fivem/drivingstyle/
 playerSpawned   = false 
 active          = false
 arrived         = false
@@ -131,10 +131,10 @@ AddEventHandler('POL:Spawn', function(player)
 
             local vehicleToFollow = GetVehiclePedIsIn(player, false)
             local mode = -1  -- 0 for ahead, -1 = behind , 1 = left, 2 = right, 3 = back left, 4 = back right  
-            local speed = 75.0 -- Modify the backup maximum speed when following you.
-            local minDistance = 10.0 -- Default safe distance set by me, you can change it here.
+            local speed = 120.0 -- Modify the backup maximum speed when following you.
+            local minDistance = 40.0 -- Default safe distance set by me, you can change it here.
             local p7 = 0                -- Do not touch here
-            local noRoadsDistance = 0.0 -- Do not touch here
+            local noRoadsDistance = 40.0 -- Do not touch here
 
             TaskVehicleEscort(driver_ped, vehicle, vehicleToFollow, mode, speed, drivingStyle, minDistance, p7, noRoadsDistance)
 
@@ -147,7 +147,7 @@ AddEventHandler('POL:Spawn', function(player)
                     Citizen.Wait(0)
                     local coords = GetEntityCoords(vehicle)
                     local distance = #(coords - pc)
-                    if distance < 11.0 then
+                    if distance < 25.0 then
                         while GetEntitySpeed(vehicle) > 0 do
                             Wait(1)
                         end
@@ -159,7 +159,7 @@ AddEventHandler('POL:Spawn', function(player)
                     Citizen.Wait(0)
                     local coords = GetEntityCoords(vehicle)
                     local distance = #(coords - pc)
-                    if distance > 11.0 then
+                    if distance > 25.0 then
                         EnterVehicle()
                         arrived = false
                     end
