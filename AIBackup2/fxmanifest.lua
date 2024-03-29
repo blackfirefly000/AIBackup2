@@ -26,7 +26,8 @@
 title 'AI Backup Remastered Remastered'
 description 'AI Law Enforcement Backup + Menu'
 author 'blackfirefly000, MajorFivePD (dsvipeer), Mooreiche, Mobius1'
-version '1.0.0'
+version '1.1.0'
+github 'https://github.com/blackfirefly000/AIBackup2'
 
 
 dependencies {
@@ -37,6 +38,9 @@ dependencies {
 fx_version 'cerulean'
 game {'gta5'}
 
+server_scripts {
+    'server.lua'
+}
 shared_scripts {
   'config.lua'
 }
