@@ -45,6 +45,7 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 * **REQUIREMENTS:**
     * [NATIVEUI FOR LUA](https://github.com/FrazzIe/NativeUILua)
     * GAME BUILD 3095 (mp2023_02) **IF USING DEFAULT CONFIG**
+    * OPTIONAL ESX or QBCore
 
 * **PREVIEWS:** 
     * **[PATROL UNIT PREVIEW by dvipeer](https://www.youtube.com/watch?v=gXKo5G4lU_4)**
@@ -59,7 +60,17 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
         * You are only able to call ONE unit and one type of unit, you can't call more than 1 patrol or 1 air unit, etc]
         * Controller Support in this resource disabled to avoid issues while using controller
 
-# CHANGES | BUG FIXES | NEW FEATURES | PLANNED FEATURES:
+# V1.1.0 CHANGES | NEW FEATURES:
+
+*  **CHANGES:**
+     * AI Driving Behavior changed based off testing from MajorFivePD
+      
+*  **NEW FEATURES:**
+
+     * ESX and QBCore Support (not tested)
+     * Version Checker
+
+# V1.0.0 CHANGES | BUG FIXES | NEW FEATURES:
 
 *  **CHANGES:**
      * When you leave your vehicle or call backup on foot, backup units will drive to you and leave their vehicle
@@ -84,13 +95,11 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
          * Multiple vehicles per department
          * And much more!
 
-*  **PLANNED  FEATURES:**
-   * ESX and QBcore versions
+# PLANNED FEATURES:
    * Fix backup not leaving their vehicle when you exit yours while they are too close
    * Add 4 SWAT team members to the SWAT backup
    * Backup enters their vehicle and follows you if you re-enter yours
    * Boat Unit
-   * Version checker
   
 
 # CONFIGURATION:
@@ -106,6 +115,7 @@ And to dsvipeer: https://github.com/dsvipeer/AIBackupRemaster
 
 5. The livery index number is related to the number at the end of the sign texture in the vehicle ytd. The livery index starts at 0. Example: car_sign_1 is a livery for "car" with an index of 0
 
+6. Framework configuration must be set to "Standalone", "ESX", or "QBCore". The script will not be useable if any other string is present
 
  **My Github: https://github.com/blackfirefly000**
  **My Profile: https://forum.cfx.re/u/blackfirefly000/summary**
