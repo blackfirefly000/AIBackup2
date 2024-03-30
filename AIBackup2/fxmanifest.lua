@@ -26,7 +26,7 @@
 title 'AI Backup Remastered Remastered'
 description 'AI Law Enforcement Backup + Menu'
 author 'blackfirefly000, MajorFivePD (dsvipeer), Mooreiche, Mobius1'
-version '1.1.0'
+version '1.1.1'
 github 'https://github.com/blackfirefly000/AIBackup2'
 
 
