@@ -25,7 +25,7 @@ Config = {}
 
 Config.VersionChecker = true --Leave true to run version check, false to disable
 
-Config.framework = 'Standalone' --Must be Standalone, ESX, or QBCore
+Config.Framework = 'Standalone' --Must be Standalone, ESX, or QBCore
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Weapons
