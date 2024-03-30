@@ -9,7 +9,7 @@ Notes: READ ME PLEASE. No support will be given for issues discussed here. Pleas
 
 4. Extras and liveries are currently shared by all vehicles of their type and department. (All LSPD Patrol is the same as all LSPD Patrol but is not the same as LSPD SWAT or LSSD Patrol, etc) I may fix this, may not, idk.
 
-5. The livery index number is related to the number at the end of the sign texture in the vehicle ytd. The livery index starts at 0. Example: car_sign_1 is a livery for "car" with an index of 0
+5. The livery index number is related to the number at the end of the sign texture in the vehicle ytd. The livery index starts at 0. Example: car_sign_1 is a livery for "car" with an index of 0. DO NOT LEAVE BLANK
 
 6. Greetings from Germany to all Capitalists around the World! What a nice Life we all have! REMEMBER TO FIGHT AGAINST COMMUNISM! -Mooreiche
 
