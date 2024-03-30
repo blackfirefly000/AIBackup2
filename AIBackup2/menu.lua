@@ -332,7 +332,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
         if playerSpawned then
-            if (Config.framework == 'EXS' and ESX.PlayerData.job and ESX.PlayerData.job.name == 'police') then
+            if (Config.Framework == 'EXS' and ESX.PlayerData.job and ESX.PlayerData.job.name == 'police') then
                 RegisterCommand('+backup', function()
                     backUp = true
                 end, false)
@@ -340,7 +340,7 @@ Citizen.CreateThread(function()
                     backUp = false
                 end, false)
                 RegisterKeyMapping('+backup', 'Open AI Backup Menu', 'keyboard', 'ADD')
-            elseif (Config.framework == 'QBCore' and QBCore.PlayerData.job.type == 'leo'and QBCore.PlayerJob.onduty) then
+            elseif (Config.Framework == 'QBCore' and QBCore.PlayerData.job.type == 'leo'and QBCore.PlayerJob.onduty) then
                 RegisterCommand('+backup', function()
                     backUp = true
                 end, false)
@@ -348,7 +348,7 @@ Citizen.CreateThread(function()
                     backUp = false
                 end, false)
                 RegisterKeyMapping('+backup', 'Open AI Backup Menu', 'keyboard', 'ADD')
-            elseif Config.framework == 'Standalone' then
+            elseif Config.Framework == 'Standalone' then
                 RegisterCommand('+backup', function()
                     backUp = true
                 end, false)
