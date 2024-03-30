@@ -305,6 +305,7 @@ function Code4Item(menu)
     menu.OnItemSelect = function(sender, item, index)
         if item == codeFour then
             LeaveScene()
+            backupMenu:Visible(not backupMenu:Visible())
         end
     end
 end
