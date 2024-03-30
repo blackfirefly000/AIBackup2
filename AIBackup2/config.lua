@@ -67,7 +67,7 @@ Config.lspdMotor = {'s_m_y_cop_01', 's_f_y_cop_01'}
 --vehicles you want motor unit officers to use
 Config.lspdBike = {'policeb'}
 --indexes for the liveries
-Config.lspdBikeLivery = {}
+Config.lspdBikeLivery = {0}
 --Extras you want motor unit vehicles to have. Currently, these are shared across all vehicles
 Config.lspdBikeExtras = {}
 
@@ -113,7 +113,7 @@ Config.lssdMotor = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
 --vehicles you want motor unit officers to use
 Config.lssdBike = {'policeb'}
 --indexes for the liveries
-Config.lssdBikeLivery = {}
+Config.lssdBikeLivery = {0}
 --Extras you want motor unit vehicles to have. Currently, these are shared across all vehicles
 Config.lssdBikeExtras = {}
 
@@ -124,7 +124,7 @@ Config.lssdSwat = {'s_m_y_swat_01'}
 --vehicles you want SWAT officers to use
 Config.lssdArmor = {'riot'}
 --indexes for the liveries
-Config.lssdArmorLivery = {}
+Config.lssdArmorLivery = {0}
 --Extras you want SWAT vehicles to have. Currently, these are shared across all vehicles
 Config.lssdArmorExtras = {}
 
@@ -135,7 +135,7 @@ Config.lssdHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
 --helicopters you want the air unit to use
 Config.lssdHelicopter = {'polmav'}
 --indexes for the liveries
-Config.lssdHelicopterLivery = {}
+Config.lssdHelicopterLivery = {0}
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --BCSO
@@ -159,7 +159,7 @@ Config.bcsoMotor = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
 --vehicles you want motor unit officers to use
 Config.bcsoBike = {'policeb'}
 --indexes for the liveries
-Config.bcsoBikeLivery = {}
+Config.bcsoBikeLivery = {0}
 --Extras you want motor unit vehicles to have. Currently, these are shared across all vehicles
 Config.bcsoBikeExtras = {}
 
@@ -170,7 +170,7 @@ Config.bcsoSwat = {'s_m_y_swat_01'}
 --vehicles you want SWAT officers to use
 Config.bcsoArmor = {'riot'}
 --indexes for the liveries
-Config.bcsoArmorLivery = {}
+Config.bcsoArmorLivery = {0}
 --Extras you want SWAT vehicles to have. Currently, these are shared across all vehicles
 Config.bcsoArmorExtras = {}
 
@@ -205,7 +205,7 @@ Config.sahpMotor = {'s_m_y_hwaycop_01'}
 --vehicles you want motor unit officers to use
 Config.sahpBike = {'policeb'}
 --indexes for the liveries
-Config.sahpBikeLivery = {}
+Config.sahpBikeLivery = {0}
 --Extras you want motor unit vehicles to have. Currently, these are shared across all vehicles
 Config.sahpBikeExtras = {}
 
@@ -216,7 +216,7 @@ Config.sahpSwat = {'s_m_y_swat_01'}
 --vehicles you want SWAT officers to use
 Config.sahpArmor = {'riot'}
 --indexes for the liveries
-Config.sahpArmorLivery = {}
+Config.sahpArmorLivery = {0}
 --Extras you want SWAT vehicles to have. Currently, these are shared across all vehicles
 Config.sahpArmorExtras = {}
 
@@ -240,7 +240,7 @@ Config.fibOfficer = {'s_m_m_fibsec_01'}
 --vehicles you want patrol officers to use
 Config.fibCar = {'police4', 'fbi', 'fbi2'}
 --indexes for the liveries
-Config.fibCarLivery = {}
+Config.fibCarLivery = {0}
 --Extras you want patrol vehicles to have. Currently, these are shared across all vehicles
 Config.fibCarExtras = {}
 
@@ -251,7 +251,7 @@ Config.fibSwat = {'s_m_y_swat_01'}
 --vehicles you want SWAT officers to use
 Config.fibArmor = {'riot2'}
 --indexes for the liveries
-Config.fibArmorLivery = {}
+Config.fibArmorLivery = {0}
 --Extras you want SWAT vehicles to have. Currently, these are shared across all vehicles
 Config.fibArmorExtras = {}
 
