@@ -341,7 +341,7 @@ Citizen.CreateThread(function()
                     backUp = false
                 end, false)
                 RegisterKeyMapping('+backup', 'Open AI Backup Menu', 'keyboard', 'ADD')
-            elseif (Config.Framework == 'QBCore' and QBCore.PlayerData.job.type == 'leo'and QBCore.PlayerJob.onduty) then
+            elseif (Config.Framework == 'QBCore' and QBCore.PlayerData.job.type == 'leo' and QBCore.PlayerJob.onduty) then
                 RegisterCommand('+backup', function()
                     backUp = true
                 end, false)
