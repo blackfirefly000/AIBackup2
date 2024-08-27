@@ -27,6 +27,67 @@ Config.VersionChecker = true --Leave true to run version check, false to disable
 
 Config.Framework = 'Standalone' --Must be Standalone, ESX, or QBCore
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Response Types (Turn off entire response modes here) (Accepted values: true, false)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Config.Patrol = true
+Config.MotorUnit = true
+Config.SwatUnit = true
+Config.AirUnit = true
+Config.BoatUnit = true
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Departments (Turn off entire departments here) (Accepted values: true, false)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Config.lspd = true
+Config.lssd = true
+Config.bcso = true
+Config.sahp = true
+Config.fib = true
+Config.uscg = true
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Units (Turn off specific units here) (Accepted values: true, false)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--LSPD
+Config.lspdPatrolUnit = true
+Config.lspdMotorUnit = true
+Config.lspdSwatUnit = true
+Config.lspdAirUnit = true
+Config.lspdBoatUnit = true
+
+--LSSD
+Config.lssdPatrolUnit = true
+Config.lssdMotorUnit = true
+Config.lssdSwatUnit = true
+Config.lssdAirUnit = true
+Config.lssdBoatUnit = true
+
+--BCSO
+Config.bcsoPatrolUnit = true
+Config.bcsoMotorUnit = true
+Config.bcsoSwatUnit = true
+Config.bcsoAirUnit = true
+Config.bcsoBoatUnit = true
+
+--SAHP
+Config.sahpPatrolUnit = true
+Config.sahpMotorUnit = true
+Config.sahpSwatUnit = true
+Config.sahpAirUnit = true
+Config.sahpBoatUnit = true
+
+--FIB
+Config.fibPatrolUnit = true
+Config.fibSwatUnit = true
+Config.fibAirUnit = true
+
+--USCG
+Config.uscgAirUnit = true
+Config.uscgBoatUnit = true
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Weapons
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -91,6 +152,17 @@ Config.lspdHelicopter = {'polmav'}
 --indexes for the liveries
 Config.lspdHelicopterLivery = {0}
 
+--Marine
+
+--peds you want marine officers to be
+Config.lspdBoatOfficer = {'s_m_y_cop_01', 's_f_y_cop_01'}
+--vehicles you want marine officers to use
+Config.lspdBoat = {'predator'}
+--indexes for the liveries
+Config.lspdBoatLivery = {0}
+--Extras you want boats to have. Currently, these are shared across all vehicles
+Config.lspdBoatExtras = {}
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --LSSD
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -136,6 +208,17 @@ Config.lssdHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
 Config.lssdHelicopter = {'polmav'}
 --indexes for the liveries
 Config.lssdHelicopterLivery = {0}
+
+--Marine
+
+--peds you want marine officers to be
+Config.lssdBoatOfficer = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
+--vehicles you want marine officers to use
+Config.lssdBoat = {'predator'}
+--indexes for the liveries
+Config.lssdBoatLivery = {0}
+--Extras you want boats to have. Currently, these are shared across all vehicles
+Config.lssdBoatExtras = {}
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --BCSO
@@ -183,6 +266,17 @@ Config.bcsoHelicopter = {'polmav'}
 --indexes for the liveries
 Config.bcsoHelicopterLivery = {0}
 
+--Marine
+
+--peds you want marine officers to be
+Config.bcsoBoatOfficer = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
+--vehicles you want marine officers to use
+Config.bcsoBoat = {'predator'}
+--indexes for the liveries
+Config.bcsoBoatLivery = {0}
+--Extras you want boats to have. Currently, these are shared across all vehicles
+Config.bcsoBoatExtras = {}
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --SAHP
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -229,6 +323,17 @@ Config.sahpHelicopter = {'polmav'}
 --indexes for the liveries
 Config.sahpHelicopterLivery = {0}
 
+--Marine
+
+--peds you want marine officers to be
+Config.sahpBoatOfficer = {'s_m_y_hwaycop_01'}
+--vehicles you want marine officers to use
+Config.sahpBoat = {'predator'}
+--indexes for the liveries
+Config.sahpBoatLivery = {0}
+--Extras you want boats to have. Currently, these are shared across all vehicles
+Config.sahpBoatExtras = {}
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --FIB
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -263,3 +368,28 @@ Config.fibHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
 Config.fibHelicopter = {'frogger2', 'annihilator'}
 --indexes for the liveries
 Config.fibHelicopterLivery = {0}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--USCG
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Marine
+
+--peds you want marine officers to be
+Config.uscgBoatOfficer = {'s_m_y_uscg_01'}
+--vehicles you want marine officers to use
+Config.uscgBoat = {'predator'}
+--indexes for the liveries
+Config.uscgBoatLivery = {0}
+--Extras you want boats to have. Currently, these are shared across all vehicles
+Config.uscgBoatExtras = {}
+
+--Air Unit
+
+--peds you want pilots to be
+Config.uscgHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
+--helicopters you want the air unit to use
+Config.uscgHelicopter = {'annihilator'}
+--indexes for the liveries
+Config.uscgHelicopterLivery = {0}
