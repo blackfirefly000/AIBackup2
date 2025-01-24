@@ -462,39 +462,32 @@ CreateThread(function()
     end
 end)
 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        if playerSpawned then
-            if (Config.Framework == 'EXS' and ESX.PlayerData.job and ESX.PlayerData.job.name == 'police') then
-                RegisterCommand('+backup', function()
-                    backUp = true
-                end, false)
-                RegisterCommand('-backup', function()
-                    backUp = false
-                end, false)
-                RegisterKeyMapping('+backup', 'Open AI Backup Menu', 'keyboard', 'ADD')
-            elseif (Config.Framework == 'QBCore' and QBCore.Functions.GetPlayer(source).PlayerJob.type == 'leo' and  QBCore.Functions.GetPlayer(source).PlayerJob.onduty) then
-                RegisterCommand('+backup', function()
-                    backUp = true
-                end, false)
-                RegisterCommand('-backup', function()
-                    backUp = false
-                end, false)
-                RegisterKeyMapping('+backup', 'Open AI Backup Menu', 'keyboard', 'ADD')
-            elseif Config.Framework == 'Standalone' then
-                RegisterCommand('+backup', function()
-                    backUp = true
-                end, false)
-                RegisterCommand('-backup', function()
-                    backUp = false
-                end, false)
-                RegisterKeyMapping('+backup', 'Open AI Backup Menu', 'keyboard', 'ADD')
-            end
-        end
-    end
-end)
 
+if (Config.Framework == 'EXS' and ESX.PlayerData.job and ESX.PlayerData.job.name == 'police') then
+    RegisterCommand('+backup', function()
+        backUp = true
+    end, false)
+    RegisterCommand('-backup', function()
+        backUp = false
+    end, false)
+    RegisterKeyMapping('+backup', 'Open AI Backup Menu', 'keyboard', 'ADD')
+elseif (Config.Framework == 'QBCore' and QBCore.Functions.GetPlayer(source).PlayerJob.type == 'leo' and  QBCore.Functions.GetPlayer(source).PlayerJob.onduty) then
+    RegisterCommand('+backup', function()
+        backUp = true
+    end, false)
+    RegisterCommand('-backup', function()
+        backUp = false
+    end, false)
+    RegisterKeyMapping('+backup', 'Open AI Backup Menu', 'keyboard', 'ADD')
+elseif Config.Framework == 'Standalone' then
+    RegisterCommand('+backup', function()
+        backUp = true
+    end, false)
+    RegisterCommand('-backup', function()
+        backUp = false
+    end, false)
+    RegisterKeyMapping('+backup', 'Open AI Backup Menu', 'keyboard', 'ADD')
+end
 
 -- Function to select a random vehicle, random livery (integer), and all extras (or empty if none)
 function getRandomVehicle(vehicleData)
