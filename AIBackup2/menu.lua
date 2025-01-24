@@ -370,6 +370,7 @@ if Config.BoatUnit then
             local lspdBoatItem = UIMenuItem.New("LSPD", "Call LSPD Marine Backup")
             lspdBoatItem.Activated = function(sender, item)
                 if item == lspdBoatItem then
+                    boatResponse = true
                     policeman = Config.lspdBoatOfficer[math.random(#Config.lspdBoatOfficer)]
                     police =  Config.lspdBoat[math.random(#Config.lspdBoat)]
                     livery = Config.lspdBoatLivery[math.random(#Config.lspdBoatLivery)]
@@ -387,6 +388,7 @@ if Config.BoatUnit then
             local lssdBoatItem = UIMenuItem.New("LSSD", "Call LSSD Marine Backup")
             lssdBoatItem.Activated = function(sender, item)
                 if item == lssdItem then
+                    boatResponse = true
                     policeman = Config.lssdBoatOfficer[math.random(#Config.lssdBoatOfficer)]
                     police =  Config.lssdBoat[math.random(#Config.lssdBoat)]
                     livery = Config.lssdBoatLivery[math.random(#Config.lssdBoatLivery)]
@@ -404,6 +406,7 @@ if Config.BoatUnit then
             local bcsoBoatItem = UIMenuItem.New("BCSO", "Call BCSO Marine Backup")
             bcsoBoatItem.Activated = function(sender, item)
                 if item == bcsoBoatItem then
+                    boatResponse = true
                     policeman = Config.bcsoBoatOfficer[math.random(#Config.bcsoBoatOfficer)]
                     police =  Config.bcsoBoat[math.random(#Config.bcsoBoat)]
                     livery = Config.bcsoBoatLivery[math.random(#Config.bcsoBoatLivery)]
@@ -421,6 +424,7 @@ if Config.BoatUnit then
             local sahpBoatItem = UIMenuItem.New("SAHP", "Call SAHP Marine Backup")
             sahpBoatItem.Activated = function(sender, item)
                 if item == sahpBoatItem then
+                    boatResponse = true
                     policeman = Config.sahpBoatOfficer[math.random(#Config.sahpBoatOfficer)]
                     police =  Config.sahpBoat[math.random(#Config.sahpBoat)]
                     livery = Config.sahpBoatLivery[math.random(#Config.sahpBoatLivery)]
@@ -438,6 +442,7 @@ if Config.BoatUnit then
             local uscgBoatItem = UIMenuItem.New("USCG", "Call USCG Marine Backup")
             uscgBoatItem.Activated = function(sender, item)
                 if item == uscgBoatItem then
+                    boatResponse = true
                     policeman = Config.uscgBoatOfficer[math.random(#Config.uscgBoatOfficer)]
                     police =  Config.uscgBoat[math.random(#Config.uscgBoat)]
                     livery = Config.uscgBoatLivery[math.random(#Config.uscgBoatLivery)]

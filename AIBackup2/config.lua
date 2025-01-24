@@ -115,53 +115,155 @@ Config.SwatGunComponent = {'component_at_ar_flsh', 'COMPONENT_CARBINERIFLE_MK2_C
 --peds you want patrol officers to be
 Config.lspdOfficer = {'s_m_y_cop_01', 's_f_y_cop_01'}
 --vehicles you want patrol officers to use
-Config.lspdCar = {'police', 'police2', 'police3', 'policet', 'polgauntlet'}
---indexes for the liveries
-Config.lspdCarLivery = {1}
---Extras you want patrol vehicles to have. Currently, these are shared across all vehicles
-Config.lspdCarExtras = {0, 1, 13, 17}
+Config.lspdCar = {
+    ["police"] = {
+        liveries = {
+            {id = 0, primaryColor = 134, secondaryColor = 0},
+            {id = 1, primaryColor = 134, secondaryColor = 0},
+            {id = 2, primaryColor = 134, secondaryColor = 0},
+            {id = 3, primaryColor = 134, secondaryColor = 0},
+            {id = 4, primaryColor = 134, secondaryColor = 0},
+            {id = 5, primaryColor = 134, secondaryColor = 0}
+        },
+        extras = {
+            1
+        }
+    },
+    ["police2"] = {
+        liveries = {
+            {id = 0, primaryColor = 134, secondaryColor = 0},
+            {id = 1, primaryColor = 134, secondaryColor = 0},
+            {id = 2, primaryColor = 134, secondaryColor = 0},
+            {id = 3, primaryColor = 134, secondaryColor = 0},
+            {id = 4, primaryColor = 134, secondaryColor = 0},
+            {id = 5, primaryColor = 134, secondaryColor = 0},
+            {id = 6, primaryColor = 134, secondaryColor = 0},
+            {id = 7, primaryColor = 134, secondaryColor = 0}
+        },
+        extras = {
+            1
+        }
+    },
+    ["police3"] = {
+        liveries = {
+            {id = 0, primaryColor = 134, secondaryColor = 0},
+            {id = 1, primaryColor = 134, secondaryColor = 0},
+            {id = 2, primaryColor = 134, secondaryColor = 0},
+            {id = 3, primaryColor = 134, secondaryColor = 0},
+            {id = 4, primaryColor = 134, secondaryColor = 0},
+            {id = 5, primaryColor = 134, secondaryColor = 0},
+            {id = 6, primaryColor = 134, secondaryColor = 0},
+            {id = 7, primaryColor = 134, secondaryColor = 0}
+        },
+        extras = {
+            1
+        }
+    },
+    ["policet"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    },
+    ["police5"] = {
+        liveries = {
+            {id = 1, primaryColor = 0, secondaryColor = 134},
+            {id = 2, primaryColor = 0, secondaryColor = 134},
+            {id = 3, primaryColor = 0, secondaryColor = 134},
+            {id = 5, primaryColor = 0, secondaryColor = 134},
+            {id = 18, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            3
+        }
+    },
+    ["poldorado"] = {
+        liveries = {
+            {id = 1, primaryColor = 0, secondaryColor = 134},
+            {id = 6, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            1
+        }
+    },
+    ["polgauntlet"] = {
+        liveries = {
+            {id = 1, primaryColor = 0, secondaryColor = 134},
+            {id = 14, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            3
+        }
+    },
+    ["polimpaler5"] = {
+        liveries = {
+            {id = 1, primaryColor = 0, secondaryColor = 134},
+            {id = 2, primaryColor = 0, secondaryColor = 134},
+            {id = 4, primaryColor = 0, secondaryColor = 134},
+            {id = 9, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    }
+}
 
 --Motor Unit
 
 --peds you want motor unit officers to be
 Config.lspdMotor = {'s_m_y_cop_01', 's_f_y_cop_01'}
 --vehicles you want motor unit officers to use
-Config.lspdBike = {'policeb'}
---indexes for the liveries
-Config.lspdBikeLivery = {0}
---Extras you want motor unit vehicles to have. Currently, these are shared across all vehicles
-Config.lspdBikeExtras = {}
+Config.lspdBike = {
+    ["policeb"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --SWAT
 
 --peds you want SWAT officers to be
 Config.lspdSwat = {'s_m_y_swat_01'}
 --vehicles you want SWAT officers to use
-Config.lspdArmor = {'riot'}
---indexes for the liveries
-Config.lspdArmorLivery = {0}
---Extras you want SWAT vehicles to have. Currently, these are shared across all vehicles
-Config.lspdArmorExtras = {}
+Config.lspdArmor = {
+    ["riot"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --Air Unit
 
 --peds you want pilots to be
 Config.lspdHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
 --helicopters you want the air unit to use
-Config.lspdHelicopter = {'polmav'}
---indexes for the liveries
-Config.lspdHelicopterLivery = {0}
+Config.lspdHelicopter = {
+    ["polmav"] = {
+        liveries = {
+            {id = 0, primaryColor = 0, secondaryColor = 0}
+        },
+        extras = {
+        }
+    }
+}
 
 --Marine
 
 --peds you want marine officers to be
 Config.lspdBoatOfficer = {'s_m_y_cop_01', 's_f_y_cop_01'}
 --vehicles you want marine officers to use
-Config.lspdBoat = {'predator'}
---indexes for the liveries
-Config.lspdBoatLivery = {0}
---Extras you want boats to have. Currently, these are shared across all vehicles
-Config.lspdBoatExtras = {}
+Config.lspdBoat = {
+    ["predator"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --LSSD
@@ -172,53 +274,133 @@ Config.lspdBoatExtras = {}
 --peds you want patrol officers to be
 Config.lssdOfficer = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
 --vehicles you want patrol officers to use
-Config.lssdCar = {'polgauntlet', 'sheriff', 'sheriff2'}
---indexes for the liveries
-Config.lssdCarLivery = {3, 4, 15, 16, 19}
---Extras you want patrol vehicles to have. Currently, these are shared across all vehicles
-Config.lssdCarExtras = {}
+Config.lssdCar = {
+    ["sheriff"] = {
+        liveries = {
+            {id = 0, primaryColor = 134, secondaryColor = 134},
+            {id = 1, primaryColor = 134, secondaryColor = 134},
+            {id = 2, primaryColor = 134, secondaryColor = 134},
+            {id = 3, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            1
+        },
+    },
+    ["sheriff2"] = {
+        liveries = {
+            {id = 0, primaryColor = 134, secondaryColor = 134},
+            {id = 1, primaryColor = 134, secondaryColor = 134},
+            {id = 2, primaryColor = 134, secondaryColor = 134},
+            {id = 3, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+        }
+    },
+    ["police5"] = {
+        liveries = {
+            {id = 9, primaryColor = 0, secondaryColor = 134},
+            {id = 21, primaryColor = 134, secondaryColor = 134},
+            {id = 26, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    },
+    ["poldominator10"] = {
+        liveries = {
+            {id = 4, primaryColor = 0, secondaryColor = 134},
+            {id = 9, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    },
+    ["poldorado"] = {
+        liveries = {
+            {id = 4, primaryColor = 0, secondaryColor = 134},
+            {id = 9, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            1
+        }
+    },
+    ["polgauntlet"] = {
+        liveries = {
+            {id = 5, primaryColor = 0, secondaryColor = 134},
+            {id = 17, primaryColor = 134, secondaryColor = 134},
+            {id = 20, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    },
+    ["polimpaler5"] = {
+        liveries = {
+            {id = 7, primaryColor = 0, secondaryColor = 134},
+            {id = 12, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    }
+}
 
 --Motor Unit
 
 --peds you want motor unit officers to be
 Config.lssdMotor = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
 --vehicles you want motor unit officers to use
-Config.lssdBike = {'policeb'}
---indexes for the liveries
-Config.lssdBikeLivery = {0}
---Extras you want motor unit vehicles to have. Currently, these are shared across all vehicles
-Config.lssdBikeExtras = {}
+Config.lssdBike = {
+    ["policeb"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --SWAT
 
 --peds you want SWAT officers to be
 Config.lssdSwat = {'s_m_y_swat_01'}
 --vehicles you want SWAT officers to use
-Config.lssdArmor = {'riot'}
---indexes for the liveries
-Config.lssdArmorLivery = {0}
---Extras you want SWAT vehicles to have. Currently, these are shared across all vehicles
-Config.lssdArmorExtras = {}
+Config.lssdArmor = {
+    ["riot"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --Air Unit
 
 --peds you want pilots to be
 Config.lssdHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
 --helicopters you want the air unit to use
-Config.lssdHelicopter = {'polmav'}
---indexes for the liveries
-Config.lssdHelicopterLivery = {0}
+Config.lssdHelicopter = {
+    ["polmav"] = {
+        liveries = {
+            {id = 0, primaryColor = 0, secondaryColor = 0}
+        },
+        extras = {
+        }
+    }
+}
 
 --Marine
 
 --peds you want marine officers to be
 Config.lssdBoatOfficer = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
 --vehicles you want marine officers to use
-Config.lssdBoat = {'predator'}
---indexes for the liveries
-Config.lssdBoatLivery = {0}
---Extras you want boats to have. Currently, these are shared across all vehicles
-Config.lssdBoatExtras = {}
+Config.lssdBoat = {
+    ["predator"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --BCSO
@@ -229,53 +411,133 @@ Config.lssdBoatExtras = {}
 --peds you want patrol officers to be
 Config.bcsoOfficer = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
 --vehicles you want patrol officers to use
-Config.bcsoCar = {'polgauntlet', 'sheriff', 'sheriff2'}
---indexes for the liveries
-Config.bcsoCarLivery = {3, 4, 15, 16, 19}
---Extras you want patrol vehicles to have. Currently, these are shared across all vehicles
-Config.bcsoCarExtras = {}
+Config.bcsoCar = {
+    ["sheriff"] = {
+        liveries = {
+            {id = 0, primaryColor = 134, secondaryColor = 134},
+            {id = 1, primaryColor = 134, secondaryColor = 134},
+            {id = 2, primaryColor = 134, secondaryColor = 134},
+            {id = 3, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            1
+        },
+    },
+    ["sheriff2"] = {
+        liveries = {
+            {id = 0, primaryColor = 134, secondaryColor = 134},
+            {id = 1, primaryColor = 134, secondaryColor = 134},
+            {id = 2, primaryColor = 134, secondaryColor = 134},
+            {id = 3, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+        }
+    },
+    ["police5"] = {
+        liveries = {
+            {id = 9, primaryColor = 0, secondaryColor = 134},
+            {id = 21, primaryColor = 134, secondaryColor = 134},
+            {id = 26, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    },
+    ["poldominator10"] = {
+        liveries = {
+            {id = 4, primaryColor = 0, secondaryColor = 134},
+            {id = 9, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    },
+    ["poldorado"] = {
+        liveries = {
+            {id = 4, primaryColor = 0, secondaryColor = 134},
+            {id = 9, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            1
+        }
+    },
+    ["polgauntlet"] = {
+        liveries = {
+            {id = 5, primaryColor = 0, secondaryColor = 134},
+            {id = 17, primaryColor = 134, secondaryColor = 134},
+            {id = 20, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    },
+    ["polimpaler5"] = {
+        liveries = {
+            {id = 7, primaryColor = 0, secondaryColor = 134},
+            {id = 12, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    }
+}
 
 --Motor Unit
 
 --peds you want motor unit officers to be
 Config.bcsoMotor = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
 --vehicles you want motor unit officers to use
-Config.bcsoBike = {'policeb'}
---indexes for the liveries
-Config.bcsoBikeLivery = {0}
---Extras you want motor unit vehicles to have. Currently, these are shared across all vehicles
-Config.bcsoBikeExtras = {}
+Config.bcsoBike = {
+    ["policeb"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --SWAT
 
 --peds you want SWAT officers to be
 Config.bcsoSwat = {'s_m_y_swat_01'}
 --vehicles you want SWAT officers to use
-Config.bcsoArmor = {'riot'}
---indexes for the liveries
-Config.bcsoArmorLivery = {0}
---Extras you want SWAT vehicles to have. Currently, these are shared across all vehicles
-Config.bcsoArmorExtras = {}
+Config.bcsoArmor = {
+    ["riot"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --Air Unit
 
 --peds you want pilots to be
 Config.bcsoHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
 --helicopters you want the air unit to use
-Config.bcsoHelicopter = {'polmav'}
---indexes for the liveries
-Config.bcsoHelicopterLivery = {0}
+Config.bcsoHelicopter = {
+    ["polmav"] = {
+        liveries = {
+            {id = 0, primaryColor = 0, secondaryColor = 0}
+        },
+        extras = {
+        }
+    }
+}
 
 --Marine
 
 --peds you want marine officers to be
 Config.bcsoBoatOfficer = {'s_f_y_sheriff_01', 's_m_y_sheriff_01'}
 --vehicles you want marine officers to use
-Config.bcsoBoat = {'predator'}
---indexes for the liveries
-Config.bcsoBoatLivery = {0}
---Extras you want boats to have. Currently, these are shared across all vehicles
-Config.bcsoBoatExtras = {}
+Config.bcsoBoat = {
+    ["predator"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --SAHP
@@ -286,53 +548,110 @@ Config.bcsoBoatExtras = {}
 --peds you want patrol officers to be
 Config.sahpOfficer = {'s_m_y_hwaycop_01'}
 --vehicles you want patrol officers to use
-Config.sahpCar = {'polgauntlet'}
---indexes for the liveries
-Config.sahpCarLivery = {2, 14}
---Extras you want patrol vehicles to have. Currently, these are shared across all vehicles
-Config.sahpCarExtras = {}
+Config.sahpCar = {
+    ["police5"] = {
+        liveries = {
+            {id = 7, primaryColor = 0, secondaryColor = 134},
+            {id = 19, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    },
+    ["poldominator10"] = {
+        liveries = {
+            {id = 2, primaryColor = 0, secondaryColor = 134},
+            {id = 7, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    },
+    ["poldorado"] = {
+        liveries = {
+            {id = 2, primaryColor = 0, secondaryColor = 134},
+            {id = 7, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            1
+        }
+    },
+    ["polgauntlet"] = {
+        liveries = {
+            {id = 3, primaryColor = 0, secondaryColor = 134},
+            {id = 15, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    },
+    ["polimpaler5"] = {
+        liveries = {
+            {id = 5, primaryColor = 0, secondaryColor = 134},
+            {id = 10, primaryColor = 134, secondaryColor = 134}
+        },
+        extras = {
+            2
+        }
+    }
+}
 
 --Motor Unit
 
 --peds you want motor unit officers to be
 Config.sahpMotor = {'s_m_y_hwaycop_01'}
 --vehicles you want motor unit officers to use
-Config.sahpBike = {'policeb'}
---indexes for the liveries
-Config.sahpBikeLivery = {0}
---Extras you want motor unit vehicles to have. Currently, these are shared across all vehicles
-Config.sahpBikeExtras = {}
+Config.sahpBike = {
+    ["policeb"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --SWAT
 
 --peds you want SWAT officers to be
 Config.sahpSwat = {'s_m_y_swat_01'}
 --vehicles you want SWAT officers to use
-Config.sahpArmor = {'riot'}
---indexes for the liveries
-Config.sahpArmorLivery = {0}
---Extras you want SWAT vehicles to have. Currently, these are shared across all vehicles
-Config.sahpArmorExtras = {}
+Config.sahpArmor = {
+    ["riot"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --Air Unit
 
 --peds you want pilots to be
 Config.sahpHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
 --helicopters you want the air unit to use
-Config.sahpHelicopter = {'polmav'}
---indexes for the liveries
-Config.sahpHelicopterLivery = {0}
+Config.sahpHelicopter = {
+    ["polmav"] = {
+        liveries = {
+            {id = 0, primaryColor = 0, secondaryColor = 0}
+        },
+        extras = {
+        }
+    }
+}
 
 --Marine
 
 --peds you want marine officers to be
 Config.sahpBoatOfficer = {'s_m_y_hwaycop_01'}
 --vehicles you want marine officers to use
-Config.sahpBoat = {'predator'}
---indexes for the liveries
-Config.sahpBoatLivery = {0}
---Extras you want boats to have. Currently, these are shared across all vehicles
-Config.sahpBoatExtras = {}
+Config.sahpBoat = {
+    ["predator"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --FIB
@@ -343,32 +662,68 @@ Config.sahpBoatExtras = {}
 --peds you want patrol officers to be
 Config.fibOfficer = {'s_m_m_fibsec_01'}
 --vehicles you want patrol officers to use
-Config.fibCar = {'police4', 'fbi', 'fbi2'}
---indexes for the liveries
-Config.fibCarLivery = {0}
---Extras you want patrol vehicles to have. Currently, these are shared across all vehicles
-Config.fibCarExtras = {}
+Config.fibCar = {
+    ["fbi"] = {
+        liveries = {
+        },
+        extras = {
+            1
+        },
+    },
+    ["fbi2"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    },
+    ["police4"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    },
+    ["polgauntlet"] = {
+        liveries = {
+            {id = 0, primaryColor = 0, secondaryColor = 0}
+        },
+        extras = {
+        }
+    }
+}
 
 --SWAT
 
 --peds you want SWAT officers to be
 Config.fibSwat = {'s_m_y_swat_01'}
 --vehicles you want SWAT officers to use
-Config.fibArmor = {'riot2'}
---indexes for the liveries
-Config.fibArmorLivery = {0}
---Extras you want SWAT vehicles to have. Currently, these are shared across all vehicles
-Config.fibArmorExtras = {}
+Config.fibArmor = {
+    ["riot"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --Air Unit
 
 --peds you want pilots to be
 Config.fibHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
 --helicopters you want the air unit to use
-Config.fibHelicopter = {'frogger2', 'annihilator'}
---indexes for the liveries
-Config.fibHelicopterLivery = {0}
-
+Config.fibHelicopter = {
+    ["frogger2"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    },
+    ["annihilator"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --USCG
@@ -379,17 +734,25 @@ Config.fibHelicopterLivery = {0}
 --peds you want marine officers to be
 Config.uscgBoatOfficer = {'s_m_y_uscg_01'}
 --vehicles you want marine officers to use
-Config.uscgBoat = {'predator'}
---indexes for the liveries
-Config.uscgBoatLivery = {0}
---Extras you want boats to have. Currently, these are shared across all vehicles
-Config.uscgBoatExtras = {}
+Config.uscgBoat = {
+    ["predator"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}
 
 --Air Unit
 
 --peds you want pilots to be
 Config.uscgHelicopterPilot = {'s_m_y_pilot_01', 's_m_m_pilot_02'}
 --helicopters you want the air unit to use
-Config.uscgHelicopter = {'annihilator'}
---indexes for the liveries
-Config.uscgHelicopterLivery = {0}
+Config.uscgHelicopter = {
+    ["annihilator"] = {
+        liveries = {
+        },
+        extras = {
+        }
+    }
+}

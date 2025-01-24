@@ -86,7 +86,12 @@ AddEventHandler('POL:Spawn', function(player)
             end
 
             local offset = GetOffsetFromEntityInWorldCoords(player, 50, 50, 0)
-            local heading, spawn = GetNthClosestVehicleNodeFavourDirection(offset.x, offset.y, offset.z, pc.x, pc.y, pc.z, 20, 1, 0x40400000, 0)
+
+            if boatResponse then
+                local heading, spawn = GetNthClosestVehicleNodeFavourDirection(offset.x, offset.y, offset.z, pc.x, pc.y, pc.z, 20, 3, 0x40400000, 0)
+            else
+                local heading, spawn = GetNthClosestVehicleNodeFavourDirection(offset.x, offset.y, offset.z, pc.x, pc.y, pc.z, 20, 1, 0x40400000, 0)
+            end
 
             vehicle = CreateVehicle(GetHashKey(police), spawn.x, spawn.y, spawn.z, heading, true, true)
             driver_ped = CreatePedInsideVehicle(vehicle, pedtype, GetHashKey(policeman), -1, true, true)
