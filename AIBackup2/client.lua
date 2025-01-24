@@ -100,12 +100,14 @@ AddEventHandler('POL:Spawn', function(player)
             SetRelationshipBetweenGroups(1, relHash, GetHashKey("PLAYER"))
             SetRelationshipBetweenGroups(1, GetHashKey("PLAYER"), relHash)
 
-            for i=1, passengerNumber do
-                passengerPed = CreatePedInsideVehicle(vehicle, pedtype, GetHashKey(policeman), i - 1, true, true) -- i - 1 assigns seat 0, 1, or 2
-                SetPedRelationshipGroupHash(passengerPed, relHash)
-                --SetPedAsGroupMember(passengerPed, playerGroupId)
-                SetEntityAsMissionEntity(passengerPed, true, true)
-                table.insert(passengerPeds, passengerPed)
+            if passengerNumber > 0 then
+                for i=1, passengerNumber do
+                    passengerPed = CreatePedInsideVehicle(vehicle, pedtype, GetHashKey(policeman), i - 1, true, true) -- i - 1 assigns seat 0, 1, or 2
+                    SetPedRelationshipGroupHash(passengerPed, relHash)
+                    --SetPedAsGroupMember(passengerPed, playerGroupId)
+                    SetEntityAsMissionEntity(passengerPed, true, true)
+                    table.insert(passengerPeds, passengerPed)
+                end
             end
 
             SetModelAsNoLongerNeeded(GetHashKey(police))
@@ -245,10 +247,12 @@ AddEventHandler('POLBoat:Spawn', function(player)
             SetEntityAsMissionEntity(driver_ped, true, true) 
             NetworkRequestControlOfEntity(driver_ped) 
 
-            for i=1, passengerNumber do
-                passengerPed = CreatePedInsideVehicle(vehicle, pedtype, GetHashKey(policeman), i - 1, true, true) -- i - 1 assigns seat 0, 1, or 2
-                SetEntityAsMissionEntity(passengerPed, true, true)
-                table.insert(passengerPeds, passengerPed)
+            if passengerNumber > 0 then
+                for i=1, passengerNumber do
+                    passengerPed = CreatePedInsideVehicle(vehicle, pedtype, GetHashKey(policeman), i - 1, true, true) -- i - 1 assigns seat 0, 1, or 2
+                    SetEntityAsMissionEntity(passengerPed, true, true)
+                    table.insert(passengerPeds, passengerPed)
+                end
             end
 
             SetModelAsNoLongerNeeded(GetHashKey(police))
@@ -357,10 +361,12 @@ AddEventHandler('POLMav:Spawn', function(player)
             SetEntityAsMissionEntity(vehicle, true, false)
             SetEntityAsMissionEntity(driver_ped, true, false)
 
-            for i=1, passengerNumber do
-                passengerPed = CreatePedInsideVehicle(vehicle, pedtype, GetHashKey(pilot), i - 1, true, true) -- i - 1 assigns seat 0, 1, or 2
-                SetEntityAsMissionEntity(passengerPed, true, true)
-                table.insert(passengerPeds, passengerPed)
+            if passengerNumber > 0 then
+                for i=1, passengerNumber do
+                    passengerPed = CreatePedInsideVehicle(vehicle, pedtype, GetHashKey(pilot), i - 1, true, true) -- i - 1 assigns seat 0, 1, or 2
+                    SetEntityAsMissionEntity(passengerPed, true, true)
+                    table.insert(passengerPeds, passengerPed)
+                end
             end
 
             SetModelAsNoLongerNeeded(GetHashKey(helicopter))
