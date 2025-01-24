@@ -426,10 +426,10 @@ function LeaveScene()
 
         -- Handle behavior based on the current event
         if currentEvent == 'POL:Spawn' then
-            TaskEnterVehicle(driver_ped, vehicle, 2000, -1, 1.0, 1, 0)
             for _, passengerPed in ipairs(passengerPeds) do
                 TaskEnterVehicle(passengerPed, vehicle, 2000, i - 1, 1.0, 1, 0)
             end   
+            TaskEnterVehicle(driver_ped, vehicle, 2000, -1, 1.0, 1, 0)
         elseif currentEvent == 'POLBoat:Spawn' then
             --TaskVehicleDriveWander(driver_ped, vehicle, 30.0, 1087111740)
             TaskBoatMission(driver_ped, vehicle, 0, 0, 0.0, 0.0, 0.0, 16, 40, 1087111740, 0, 1039)
