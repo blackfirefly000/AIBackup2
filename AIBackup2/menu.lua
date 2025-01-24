@@ -13,9 +13,7 @@ if Config.Patrol then
             lspdItem.Activated = function(sender, item)
                 if item == lspdItem then
                     policeman = Config.lspdOfficer[math.random(#Config.lspdOfficer)]
-                    police =  Config.lspdCar[math.random(#Config.lspdCar)]
-                    livery = Config.lspdCarLivery[math.random(#Config.lspdCarLivery)]
-                    extras = Config.lspdCarExtras
+                    police, livery, extras = getRandomVehicle(Config.lspdCar)
                     weapon = Config.PatrolGun
                     gunComponent = Config.PatrolGunComponent
                     pedtype = 6
@@ -30,9 +28,7 @@ if Config.Patrol then
             lssdItem.Activated = function(sender, item)
                 if item == lssdItem then
                     policeman = Config.lssdOfficer[math.random(#Config.lssdOfficer)]
-                    police =  Config.lssdCar[math.random(#Config.lssdCar)]
-                    livery = Config.lssdCarLivery[math.random(#Config.lssdCarLivery)]
-                    extras = Config.lssdCarExtras
+                    police, livery, extras = getRandomVehicle(Config.lssdCar)
                     weapon = Config.PatrolGun
                     gunComponent = Config.PatrolGunComponent
                     pedtype = 6
@@ -47,9 +43,7 @@ if Config.Patrol then
             bcsoItem.Activated = function(sender, item)
                 if item == bcsoItem then
                     policeman = Config.bcsoOfficer[math.random(#Config.bcsoOfficer)]
-                    police =  Config.bcsoCar[math.random(#Config.bcsoCar)]
-                    livery = Config.bcsoCarLivery[math.random(#Config.bcsoCarLivery)]
-                    extras = Config.bcsoCarExtras
+                    police, livery, extras = getRandomVehicle(Config.bcsoCar)
                     weapon = Config.PatrolGun
                     gunComponent = Config.PatrolGunComponent
                     pedtype = 6
@@ -64,9 +58,7 @@ if Config.Patrol then
             sahpItem.Activated = function(sender, item)
                 if item == sahpItem then
                     policeman = Config.sahpOfficer[math.random(#Config.sahpOfficer)]
-                    police =  Config.sahpCar[math.random(#Config.sahpCar)]
-                    livery = Config.sahpCarLivery[math.random(#Config.sahpCarLivery)]
-                    extras = Config.sahpCarExtras
+                    police, livery, extras = getRandomVehicle(Config.sahpCar)
                     weapon = Config.PatrolGun
                     gunComponent = Config.PatrolGunComponent
                     pedtype = 6
@@ -80,10 +72,9 @@ if Config.Patrol then
             local fibItem = UIMenuItem.New("FIB", "Call FIB Patrol Backup")
             fibItem.Activated = function(sender, item)
                 if item == fibItem then
+                    passengerNumber = 1
                     policeman = Config.fibOfficer[math.random(#Config.fibOfficer)]
-                    police =  Config.fibCar[math.random(#Config.fibCar)]
-                    livery = Config.fibCarLivery[math.random(#Config.fibCarLivery)]
-                    extras = Config.fibCarExtras
+                    police, livery, extras = getRandomVehicle(Config.fibCar)
                     weapon = Config.SwatGun
                     gunComponent = Config.SwatGunComponent
                     pedtype = 27
@@ -107,9 +98,7 @@ if Config.MotorUnit then
         lspdMotorItem.Activated = function(sender, item)
             if item == lspdMotorItem then
             policeman = Config.lspdMotor[math.random(#Config.lspdMotor)]
-            police =  Config.lspdBike[math.random(#Config.lspdBike)]
-            livery = Config.lspdBikeLivery[math.random(#Config.lspdBikeLivery)]
-            extras = Config.lspdBikeExtras
+            police, livery, extras = getRandomVehicle(Config.lspdBike)
             weapon = Config.PatrolGun
             gunComponent = Config.PatrolGunComponent
             pedtype = 6
@@ -158,9 +147,7 @@ if Config.MotorUnit then
         sahpMotorItem.Activated = function(sender, item)
                 if item == sahpMotorItem then
                 policeman = Config.sahpMotor[math.random(#Config.sahpMotor)]
-                police =  Config.sahpBike[math.random(#Config.sahpBike)]
-                livery = Config.sahpBikeLivery[math.random(#Config.sahpBikeLivery)]
-                extras = Config.sahpBikeExtras
+                police, livery, extras = getRandomVehicle(Config.sahpBike)
                 weapon = Config.PatrolGun
                 gunComponent = Config.PatrolGunComponent
                 pedtype = 6
@@ -183,10 +170,9 @@ if Config.SwatUnit then
             local lspdSwatItem = UIMenuItem.New("LSPD", "Call LSPD SWAT Backup")
             lspdSwatItem.Activated = function(sender, item)
                 if item == lspdSwatItem then
+                    passengerNumber = 3
                     policeman = Config.lspdSwat[math.random(#Config.lspdSwat)] 
-                    police = Config.lspdArmor[math.random(#Config.lspdArmor)]
-                    livery = Config.lspdArmorLivery[math.random(#Config.lspdArmorLivery)]
-                    extras = Config.lspdArmorExtras
+                    police, livery, extras = getRandomVehicle(Config.lspdArmor)
                     weapon = Config.SwatGun
                     gunComponent = Config.SwatGunComponent
                     pedtype = 27
@@ -200,10 +186,9 @@ if Config.SwatUnit then
             local lssdSwatItem = UIMenuItem.New("LSSD", "Call LSSD SWAT Backup")
             lssdSwatItem.Activated = function(sender, item)
                 if item == lssdSwatItem then
+                    passengerNumber = 3
                     policeman = Config.lssdSwat[math.random(#Config.lssdSwat)] 
-                    police = Config.lssdArmor[math.random(#Config.lssdArmor)]
-                    livery = Config.lssdArmorLivery[math.random(#Config.lssdArmorLivery)]
-                    extras = Config.lssdArmorExtras
+                    police, livery, extras = getRandomVehicle(Config.lssdArmor)
                     weapon = Config.SwatGun
                     gunComponent = Config.SwatGunComponent
                     pedtype = 27
@@ -217,10 +202,9 @@ if Config.SwatUnit then
             local bcsoSwatItem = UIMenuItem.New("BCSO", "Call BCSO SWAT Backup")
             bcsoSwatItem.Activated = function(sender, item)
                 if item == bcsoSwatItem then
+                    passengerNumber = 3
                     policeman = Config.bcsoSwat[math.random(#Config.bcsoSwat)] 
-                    police = Config.bcsoArmor[math.random(#Config.bcsoArmor)]
-                    livery = Config.bcsoArmorLivery[math.random(#Config.bcsoArmorLivery)]
-                    extras = Config.bcsoArmorExtras
+                    police, livery, extras = getRandomVehicle(Config.bcsoArmor)
                     weapon = Config.SwatGun
                     gunComponent = Config.SwatGunComponent
                     pedtype = 27
@@ -234,10 +218,9 @@ if Config.SwatUnit then
             local sahpSwatItem = UIMenuItem.New("SAHP", "Call SAHP SWAT Backup")
             sahpSwatItem.Activated = function(sender, item)
                 if item == sahpSwatItem then
+                    passengerNumber = 3
                     policeman = Config.sahpSwat[math.random(#Config.sahpSwat)] 
-                    police = Config.sahpArmor[math.random(#Config.sahpArmor)]
-                    livery = Config.sahpArmorLivery[math.random(#Config.sahpArmorLivery)]
-                    extras = Config.sahpArmorExtras
+                    police, livery, extras = getRandomVehicle(Config.sahpArmor)
                     weapon = Config.SwatGun
                     gunComponent = Config.SwatGunComponent
                     pedtype = 27
@@ -251,10 +234,9 @@ if Config.SwatUnit then
             local fibSwatItem = UIMenuItem.New("FIB", "Call FIB SWAT Backup")
             fibSwatItem.Activated = function(sender, item)
                 if item == fibSwatItem then
+                    passengerNumber = 3
                     policeman = Config.fibSwat[math.random(#Config.fibSwat)] 
-                    police = Config.fibArmor[math.random(#Config.fibArmor)]
-                    livery = Config.fibArmorLivery[math.random(#Config.fibArmorLivery)]
-                    extras = Config.fibArmorExtras
+                    police, livery, extras = getRandomVehicle(Config.fibArmor)
                     weapon = Config.SwatGun
                     gunComponent = Config.SwatGunComponent
                     pedtype = 29
@@ -277,9 +259,9 @@ if Config.AirUnit then
             local lspdAirItem = UIMenuItem.New("LSPD", "Call LSPD Air Support")
             lspdAirItem.Activated = function(sender, item)
                 if item == lspdAirItem then
+                    passengerNumber = 1
                     pilot = Config.lspdHelicopterPilot[math.random(#Config.lspdHelicopterPilot)]
-                    helicopter = Config.lspdHelicopter[math.random(#Config.lspdHelicopter)]
-                    livery = Config.lspdHelicopterLivery[math.random(#Config.lspdHelicopterLivery)]
+                    helicopter, livery,_ = getRandomVehicle(Config.lspdHelicopter)
                     pedtype = 6
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A LSPD air unit is en route to assist.")
                     TriggerEvent('POLMav:Spawn', player)
@@ -291,9 +273,9 @@ if Config.AirUnit then
             local lssdAirItem = UIMenuItem.New("LSSD", "Call LSSD Air Support")
             lssdAirItem.Activated = function(sender, item)
                 if item == lssdAirItem then
+                    passengerNumber = 1
                     pilot = Config.lssdHelicopterPilot[math.random(#Config.lssdHelicopterPilot)]
-                    helicopter = Config.lssdHelicopter[math.random(#Config.lssdHelicopter)]
-                    livery = Config.lssdHelicopterLivery[math.random(#Config.lssdHelicopterLivery)]
+                    helicopter, livery,_ = getRandomVehicle(Config.lssdHelicopter)
                     pedtype = 6
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A LSSD air unit is en route to assist.")
                     TriggerEvent('POLMav:Spawn', player)
@@ -305,9 +287,9 @@ if Config.AirUnit then
             local bcsoAirItem = UIMenuItem.New("BCSO", "Call BCSO Air Support")
             bcsoAirItem.Activated = function(sender, item)
                 if item == bcsoAirItem then
+                    passengerNumber = 1
                     pilot = Config.bcsoHelicopterPilot[math.random(#Config.bcsoHelicopterPilot)]
-                    helicopter = Config.bcsoHelicopter[math.random(#Config.bcsoHelicopter)]
-                    livery = Config.bcsoHelicopterLivery[math.random(#Config.bcsoHelicopterLivery)]
+                    helicopter, livery,_ = getRandomVehicle(Config.bcsoHelicopter)
                     pedtype = 6
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A BCSO air unit is en route to assist.")
                     TriggerEvent('POLMav:Spawn', player)
@@ -319,9 +301,9 @@ if Config.AirUnit then
             local sahpAirItem = UIMenuItem.New("SAHP", "Call SAHP Air Support")
             sahpAirItem.Activated = function(sender, item)
                 if item == sahpAirItem then
+                    passengerNumber = 1
                     pilot = Config.sahpHelicopterPilot[math.random(#Config.sahpHelicopterPilot)]
-                    helicopter = Config.sahpHelicopter[math.random(#Config.sahpHelicopter)]
-                    livery = Config.sahpHelicopterLivery[math.random(#Config.sahpHelicopterLivery)]
+                    helicopter, livery,_ = getRandomVehicle(#Config.sahpHelicopter)
                     pedtype = 6
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A SAHP air unit is en route to assist.")
                     TriggerEvent('POLMav:Spawn', player)
@@ -333,9 +315,9 @@ if Config.AirUnit then
             local fibAirItem = UIMenuItem.New("FIB", "Call FIB Air Support")
             fibAirItem.Activated = function(sender, item)
                 if item == fibAirItem then
+                    passengerNumber = 1
                     pilot = Config.fibHelicopterPilot[math.random(#Config.fibHelicopterPilot)]
-                    helicopter = Config.fibHelicopter[math.random(#Config.fibHelicopter)]
-                    livery = Config.fibHelicopterLivery[math.random(#Config.fibHelicopterLivery)]
+                    helicopter, livery,_ = getRandomVehicle(Config.fibHelicopter)
                     pedtype = 27
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A FIB air unit is en route to assist.")
                     TriggerEvent('POLMav:Spawn', player)
@@ -347,9 +329,9 @@ if Config.AirUnit then
             local uscgAirItem = UIMenuItem.New("USCG", "Call USCG Air Support")
             uscgAirItem.Activated = function(sender, item)
                 if item == uscgAirItem then
+                    passengerNumber = 1
                     pilot = Config.uscgHelicopterPilot[math.random(#Config.uscgHelicopterPilot)]
-                    helicopter = Config.uscgHelicopter[math.random(#Config.uscgHelicopter)]
-                    livery = Config.uscgHelicopterLivery[math.random(#Config.uscgHelicopterLivery)]
+                    helicopter, livery,_ = getRandomVehicle(Config.uscgHelicopter)
                     pedtype = 27
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A USCG air unit is en route to assist.")
                     TriggerEvent('POLMav:Spawn', player)
@@ -370,16 +352,14 @@ if Config.BoatUnit then
             local lspdBoatItem = UIMenuItem.New("LSPD", "Call LSPD Marine Backup")
             lspdBoatItem.Activated = function(sender, item)
                 if item == lspdBoatItem then
-                    boatResponse = true
+                    passengerNumber = 1
                     policeman = Config.lspdBoatOfficer[math.random(#Config.lspdBoatOfficer)]
-                    police =  Config.lspdBoat[math.random(#Config.lspdBoat)]
-                    livery = Config.lspdBoatLivery[math.random(#Config.lspdBoatLivery)]
-                    extras = Config.lspdBoatExtras
+                    police, livery, extras = getRandomVehicle(Config.lspdBoat)
                     weapon = Config.PatrolGun
                     gunComponent = Config.PatrolGunComponent
                     pedtype = 6
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A LSPD boat is en route to assist")
-                    TriggerEvent('POL:Spawn', player) 
+                    TriggerEvent('POLBoat:Spawn', player) 
                 end
             end
             submenu:AddItem(lspdBoatItem)
@@ -388,16 +368,14 @@ if Config.BoatUnit then
             local lssdBoatItem = UIMenuItem.New("LSSD", "Call LSSD Marine Backup")
             lssdBoatItem.Activated = function(sender, item)
                 if item == lssdItem then
-                    boatResponse = true
+                    passengerNumber = 1
                     policeman = Config.lssdBoatOfficer[math.random(#Config.lssdBoatOfficer)]
-                    police =  Config.lssdBoat[math.random(#Config.lssdBoat)]
-                    livery = Config.lssdBoatLivery[math.random(#Config.lssdBoatLivery)]
-                    extras = Config.lssdBoatExtras
+                    police, livery, extras = getRandomVehicle(Config.lssdBoat)
                     weapon = Config.PatrolGun
                     gunComponent = Config.PatrolGunComponent
                     pedtype = 6
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A LSSD boat is en route to assist.")
-                    TriggerEvent('POL:Spawn', player) 
+                    TriggerEvent('POLBoat:Spawn', player) 
                 end
             end
             submenu:AddItem(lssdBoatItem)
@@ -406,16 +384,14 @@ if Config.BoatUnit then
             local bcsoBoatItem = UIMenuItem.New("BCSO", "Call BCSO Marine Backup")
             bcsoBoatItem.Activated = function(sender, item)
                 if item == bcsoBoatItem then
-                    boatResponse = true
+                    passengerNumber = 1
                     policeman = Config.bcsoBoatOfficer[math.random(#Config.bcsoBoatOfficer)]
-                    police =  Config.bcsoBoat[math.random(#Config.bcsoBoat)]
-                    livery = Config.bcsoBoatLivery[math.random(#Config.bcsoBoatLivery)]
-                    extras = Config.bcsoBoatExtras
+                    police, livery, extras = getRandomVehicle(Config.bcsoBoat)
                     weapon = Config.PatrolGun
                     gunComponent = Config.PatrolGunComponent
                     pedtype = 6
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A BCSO boat is en route to assist.")
-                    TriggerEvent('POL:Spawn', player) 
+                    TriggerEvent('POLBoat:Spawn', player) 
                 end
             end
             submenu:AddItem(bcsoBoatItem)
@@ -424,16 +400,14 @@ if Config.BoatUnit then
             local sahpBoatItem = UIMenuItem.New("SAHP", "Call SAHP Marine Backup")
             sahpBoatItem.Activated = function(sender, item)
                 if item == sahpBoatItem then
-                    boatResponse = true
+                    passengerNumber = 1
                     policeman = Config.sahpBoatOfficer[math.random(#Config.sahpBoatOfficer)]
-                    police =  Config.sahpBoat[math.random(#Config.sahpBoat)]
-                    livery = Config.sahpBoatLivery[math.random(#Config.sahpBoatLivery)]
-                    extras = Config.sahpBoatExtras
+                    police, livery, extras = getRandomVehicle(Config.sahpBoat)
                     weapon = Config.PatrolGun
                     gunComponent = Config.PatrolGunComponent
                     pedtype = 6
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A SAHP boat is en route to assist.")
-                    TriggerEvent('POL:Spawn', player) 
+                    TriggerEvent('POLBoat:Spawn', player) 
                 end
             end
             submenu:AddItem(sahpBoatItem)
@@ -442,16 +416,14 @@ if Config.BoatUnit then
             local uscgBoatItem = UIMenuItem.New("USCG", "Call USCG Marine Backup")
             uscgBoatItem.Activated = function(sender, item)
                 if item == uscgBoatItem then
-                    boatResponse = true
+                    passengerNumber = 1
                     policeman = Config.uscgBoatOfficer[math.random(#Config.uscgBoatOfficer)]
-                    police =  Config.uscgBoat[math.random(#Config.uscgBoat)]
-                    livery = Config.uscgBoatLivery[math.random(#Config.uscgBoatLivery)]
-                    extras = Config.uscgBoatExtras
+                    police, livery, extras = getRandomVehicle(Config.uscgBoat)
                     weapon = Config.SwatGun
                     gunComponent = Config.SwatGunComponent
                     pedtype = 27
                     ShowAdvancedNotification(companyIcon, companyName, "DISPATCH", "A USCG boat is en route to assist.")
-                    TriggerEvent('POL:Spawn', player)
+                    TriggerEvent('POLBoat:Spawn', player)
                 end
             end
             submenu:AddItem(uscgBoatItem)
@@ -467,6 +439,9 @@ function Code4Item(menu)
     menu:AddItem(codeFour)
     menu.OnItemSelect = function(sender, item, index)
         if item == codeFour then
+            if DoesBlipExist(targetBlip) then
+                RemoveBlip(targetBlip)
+            end
             LeaveScene()
             backupMenu:Visible(not backupMenu:Visible())
         end
@@ -520,3 +495,29 @@ Citizen.CreateThread(function()
     end
 end)
 
+
+-- Function to select a random vehicle, random livery (integer), and all extras (or empty if none)
+function getRandomVehicle(vehicleData)
+    -- Get all the car models from the given vehicle data
+    local cars = {}
+    for carModel in pairs(vehicleData) do
+        table.insert(cars, carModel)
+    end
+    
+    -- Select a random car model from the cars array
+    local randomCar = cars[math.random(#cars)]
+    
+    -- Get the liveries and extras for the randomly selected car
+    local carData = vehicleData[randomCar]
+    local liveries = carData.liveries or {}  -- Default to empty table if no liveries
+    local extras = carData.extras or {}      -- Default to empty table if no extras
+    
+    -- Select a random livery from the liveries array, if it exists
+    local randomLivery = nil
+    if #liveries > 0 then
+        randomLivery = liveries[math.random(1, #liveries)]  -- Randomly pick a livery with color indices
+    end
+    
+    -- Return the selected car, random livery (or nil), and all extras
+    return randomCar, randomLivery, extras
+end
